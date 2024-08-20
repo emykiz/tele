@@ -1,0 +1,257 @@
+# localhost/reqapp-api-sp/v1/groups/ReadAllGroup
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop app</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-beta3-web/fontawesome-free-6.0.0-beta3-web/css/all.min.css">
+</head>
+<body>
+
+        
+
+
+    <!-- LOGIN -->
+    <div class="login" style="visibility: visible; display: block;"> 
+        <div class="login-container">
+            <p>Already have an Account?</p>
+            <p class="red">login</p>
+
+            <form id="login-for" action="#" method="post">
+                <div class="flex">
+                    <label for="phone/email">email</label>
+                    <input type="email" id="phone/email">
+                    <p class="phone-error-message top">Input phone no or email</p>
+                </div>
+               
+                <div class="flex">
+                    <label for="password">password</label>
+                    <input type="password" id="password">
+                    <i class="fa fa-eye Eye"></i>
+                    <i class="fa fa-eye-slash hide-pw hide"></i>
+                    <p class="password-error-message top">input password</p>
+                </div>
+
+                <button class="login-btn cursur"  type="submit">LOG IN</button>
+            </form>
+
+            <p class="login-smallFont">By continuing, you agree to accept our Privacy Policy & Terms of Service.</p>
+
+            <div class="hr-display">
+                <hr class="hr">
+                <div class="hr-box">OR</div>
+                <hr class="hr">
+            </div>
+
+            <button class="signup cursur" id="trybtn">
+                SIGN UP
+            </button>
+        </div>
+    </div>
+
+    <!-- END OF LOGIN -->
+
+
+    <!-- SIGN UP -->
+
+    <div class="sign-up">
+        <div class="sign-up-container">
+            <h2>Create Account</h2>
+
+            <form id='register-form' action="/home.html" method="POST">
+                <div class="flex">
+                    <label for="Organization">Organization</label>
+                    <input type="text" id="Organization">
+                    <p class="organization-error-msg top">pls input name of organiztion</p>
+                </div>
+                <div class="flex">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name">
+                    <p class="fullname-error-msg top">Please input full name</p>
+                </div>
+                <div class="flex">
+                    <label for="phone/email">email</label>
+                    <input type="email" id="phone/email2">
+                    <p class="phoneEmail-error-msg top">Please input phone number or email</p>
+                </div>
+                <div class="flex">
+                    <label for="password">password</label>
+                    <input type="password" id="password2">
+                    <i class="fa fa-eye Eye2"></i>
+                    <i class="fa fa-eye-slash hide-pw hide2"></i>
+                    <p class="password-error-msg top">please input password</p>
+                </div>
+
+                <div class="check-flex">
+                    <input type="checkbox" id="check1" class="checkers cursur">
+                    <label for ="check1">I accept the Terms of use</label>
+                </div>
+                <div class="check-flex">
+                    <input type="checkbox" id="check2" class="checkers cursur">
+                    <label for ="check2">Sign up for email Updates</label>
+                </div>
+                <button class="create-acct cursur" type="submit" value="Submit">CREATE ACCOUNT
+                </button>
+
+                <p>Already have an account? <span class="red signup-login cursur">Log In</span></p>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="section-about">
+        <div class="about-container article-section">
+            <div class="article-one">
+                <div class="button-class">
+                    <div class="btn-class active sign-btn cursur" data-id="About" id="about-btn">About</div>
+                    <div class="btn-class dept-btn cursur" data-id="Privacy">Privacy Policy</div>
+                    <div class="btn-class dept-btn cursur" data-id="Terms">Terms and Conditions</div>
+                    <div class="btn-class dept-btn cursur" data-id="Donate">Donate</div>
+                </div>
+    
+                <div class="article">
+                    <div class="content active"  id="About">
+                        <p >The standard Lorem Ipsum passage, used since the 1500s "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        </p>
+                        <p>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                        <p>1914 translation by H. Rackham "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+                        <p>Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+                        <p>1914 translation by H. Rackham "On the other hand, we denounce with righteous indignation and 
+                     
+                
+                        
+                    </div>
+                    
+    
+                    <div class="content " id="Privacy">
+                        <h3>Department</h3>
+                        <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Ducimus sapiente magnam ut placeat rerum saepe corporis! 
+                            Odio alias voluptatem suscipit!
+                        </p>
+                    </div>
+
+                    <div class="content " id="Terms">
+                        <h3>Department</h3>
+                        <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Ducimus sapiente magnam ut placeat rerum saepe corporis! 
+                            Odio alias voluptatem suscipit!
+                        </p>
+                    </div>
+
+                    <div class="content " id="Donate">
+                        <h3>Department</h3>
+                        <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Ducimus sapiente magnam ut placeat rerum saepe corporis! 
+                            Odio alias voluptatem suscipit!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SUPPORT -->
+    <div class="support-section">
+        <div class="support-container">
+            <div class="connect-us">
+                <h2>Connect With Us</h2>
+            </div>
+            <hr>
+            <div class="message-container">
+                <h2>Send Us a Message</h2>
+
+                <form action="">
+                    <div>
+                        <div class="flex">
+                            <label for="phone/email">Phone/email</label>
+                            <input type="email" id="phone/email3" class="text">
+                        </div>
+                        <div class="flex">
+                            <textarea id="text" class="text" placeholder="Type your message here"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="submit-btn cursur">
+                        SUBMIT
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div class="addres-box">
+                <h1>30 Big Waterloo Street, Imobi Height Plaza.</h1>
+                <h1>+234 90801297438782</h1>
+                <h2>support@imobisuite.com</h2>
+                <div class="live-chat-btn cursur">LIVE CHAT</div>
+                <h1 class="faq-btn cursur">FAQ</h1>
+            </div>
+        </div>
+
+    </div>
+    <!-- END OF SUPPORT -->
+
+
+
+    <div class="faq-section">
+        <div>
+            <h1>FAQ</h1>
+        </div>
+        <div class="faq-flex">
+            <div class="faq-box">
+                <div>
+                    <h2>What is Imobi Business suite</h2>
+                    <p>Enjoy the best office solution for your business. Online or Offline we got you covered; connectivity redefined in an all in one office solution designed to meet your needs.</p>
+                </div>
+                <div>
+                    <h2>Can I make video calls with IBS</h2>
+                    <p>Enjoy the best office solution for your business. Online or Offline we got you covered; connectivity redefined in an all in one office solution designed to meet your needs.</p>
+                </div>
+                <div>
+                    <h2>Is IBS free</h2>
+                    <p>Enjoy the best office solution for your business. Online or Offline we got you covered; connectivity redefined in an all in one office solution designed to meet your needs.</p>
+                </div>
+                <div>
+                    <h2>Can IBS work on Mac OS</h2>
+                    <p>Enjoy the best office solution for your business. Online or Offline we got you covered; connectivity redefined in an all in one office solution designed to meet your needs.</p>
+                </div>
+                <div>
+                    <h2>How do I set up IBS</h2>
+                    <p>Enjoy the best office solution for your business. Online or Offline we got you covered; connectivity redefined in an all in one office solution designed to meet your needs.</p>
+                </div>
+            </div>
+            <div class="faq-box">
+                <div>
+                    <h2>Is there a Premium Version of IBS</h2>
+                    <p>Enjoy the best office solution for your business. Online or Offline we got you covered; connectivity redefined in an all in one office solution designed to meet your needs.</p>
+                </div>
+                <div>
+                    <h2>How do I donate to IBS</h2>
+                    <p>Enjoy the best office solution for your business. Online or Offline we got you covered; connectivity redefined in an all in one office solution designed to meet your needs.</p>
+                </div>
+                <div>
+                    <h2>Can IBS team access my data or communications</h2>
+                    <p>Enjoy the best office solution for your business. Online or Offline we got you covered; connectivity redefined in an all in one office solution designed to meet your needs.</p>
+                </div>
+                <div>
+                    <h2>Is IBS an African Brand?</h2>
+                    <p>Enjoy the best office solution for your business. Online or Offline we got you covered; connectivity redefined in an all in one office solution designed to meet your needs.</p>
+                </div>
+                <div>
+                    <h2>How do I set up IBS on a WAN</h2>
+                    <p>Enjoy the best office solution for your business. Online or Offline we got you covered; connectivity redefined in an all in one office solution designed to meet your needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DASHBOARD -->
+
+    
+</body>
+<script src="main.js"></script>
+<script src="validatio.js"></script>
+</html>
